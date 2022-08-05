@@ -49,7 +49,7 @@ def store(request):
     if categoryID:
         products = Products.get_all_products_by_categoryid(categoryID)
     else:
-        products = Products.get_all_products();
+        products = Products.get_all_products()
 
     data = {}
     data['products'] = products
